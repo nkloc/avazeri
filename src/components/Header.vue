@@ -13,7 +13,7 @@
                 <li><router-link to="/projet/lampe"> lampe</router-link></li>
                 <li><router-link to="/projet/4">projet 4</router-link></li>
                 <li><router-link to="/projet/5">projet 5</router-link></li>
-                <li><router-link to="/projet/6">projet 1</router-link></li>
+                <li><router-link to="/projet/6">projet 6</router-link></li>
             </ul>
         </div>
         <div v-if="showAbout" class="about">
@@ -126,10 +126,9 @@ header
     position fixed
     box-sizing border-box
     padding 10px 30px
-    font-size 14px
+    font-size 16px
     width 100%
-    font-family MaisonNeue
-    line-height 25px
+    line-height 24px
     top 60px
     left 0
     display flex
@@ -140,6 +139,9 @@ header
         li
             max-width 240px
             list-style none
+            text-transform uppercase
+            font-family MaisonNeue
+            margin-bottom 3px
             &:hover
                 font-family SangBleuEmpire
                 text-transform lowercase

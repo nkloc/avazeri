@@ -25,6 +25,7 @@ const routes = [
       imgNumber: 18,
     }
   },
+
   {
     path: '/projet/photo',
     name: 'Projet',
@@ -37,6 +38,7 @@ const routes = [
       imgNumber: 15,
     }
   },
+  
   {
     path: '/projet/lampe',
     name: 'Projet',

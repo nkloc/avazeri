@@ -24,6 +24,7 @@
         display flex
         justify-content center
         flex-direction column
+        animation appear 0.8s ease
         bottom 0
         width 100%
         padding 30px
@@ -46,4 +47,13 @@
         margin-bottom 5px
 
 
-        
+@keyframes appear {
+  0% {
+    bottom: -200px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+    
