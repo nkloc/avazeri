@@ -16,7 +16,7 @@
                 <li><router-link to="/projet/6">projet 6</router-link></li>
             </ul>
         </div>
-        <div v-if="showAbout" class="about">
+        <div v-if="showAbout" @click.prevent="displayAbout" class="about">
             <p>Profondément touchée par l'architecture et le design, particulièrement par la couleur, point commun de ces deux disciplines qui donne tout de suite une ambiance appropriée à l'espace. De même pour les matériaux nobles et les objets contemporains qui sont une rencontre entre modernité et traditions. Après un trimestre éclaire à Paris-Val de Seine en architecture, j'entame une prépa d’Arts Appliqués à Penninghen, je suis reçue en architecture d’intérieur et design en deuxième année. Aujourd’hui diplômée de Penninghen en architecture d'intérieure, je suis en perpétuelle recherche de nouvelles cultures, nouvelles architectures, nouveaux designs.</p>
         </div>
         <div v-if="showContact" class="contact">
