@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>mathilde avazeri</h1>
+        <router-link class="nav-link" to="/"><h1 >mathilde avazeri</h1></router-link>
         <div class="menu">
             <a @click.prevent="displayWork">WORK</a>
             <a @click.prevent="displayAbout">ABOUT</a>
@@ -8,12 +8,12 @@
         </div>
         <div v-if="showWork" class="work">
             <ul>
-                <li><a href="">projet 1</a></li>
-                <li><a href="">projet 1</a></li>
-                <li><a href="">projet 1</a></li>
-                <li><a href="">projet 1</a></li>
-                <li><a href="">projet 1</a></li>
-                <li><a href="">projet 1</a></li>
+                <li><router-link to="/projet/womenplease">DIPLÔME : WOMEN, PLEASE</router-link></li>
+                <li><router-link to="/projet/photo">photo</router-link></li>
+                <li><router-link to="/projet/lampe"> lampe</router-link></li>
+                <li><router-link to="/projet/4">projet 4</router-link></li>
+                <li><router-link to="/projet/5">projet 5</router-link></li>
+                <li><router-link to="/projet/6">projet 1</router-link></li>
             </ul>
         </div>
         <div v-if="showAbout" class="about">
@@ -47,12 +47,15 @@ header
     padding 0 30px
     height 60px
     width 100%
-    h1
+    .nav-link
+        color black
         font-size 32px
-        font-weight 500
         font-style normal
         font-family SangBleuEmpire
         position fixed
+        text-decoration none 
+        h1
+            font-weight 500
     .menu 
         position fixed
         right 30px
@@ -123,11 +126,11 @@ header
     position fixed
     box-sizing border-box
     padding 10px 30px
-    font-size 12px
+    font-size 14px
     width 100%
     font-family MaisonNeue
-    line-height 30px
-    top 45px
+    line-height 25px
+    top 60px
     left 0
     display flex
     flex-direction column
@@ -157,16 +160,18 @@ header
 
 @keyframes pulse {
   0% {
-    height: 10%;
+    width: 0px;
   }
   100% {
-    height: 90%;
+    width: 65%;
   }
 }
 
 .img-cv
     animation pulse 0.4s ease
-    height 90%
+    width 65%
+    z-index 100
+    max-height 100vh
 
 </style>
 
@@ -205,10 +210,5 @@ export default {
         },
         
     },
-
-    beforeDestroy() {
-        window.removeEventListener('resize', this.getWindowWidth);
-        window.removeEventListener('resize', this.getWindowHeight);
-    }
 }
 </script>

@@ -1,21 +1,20 @@
 <template>
   <div id="app">
-    <Header/>
-    <Home/>
+    <Header />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
-import Header from './components/Header.vue'
-
+import Header from '@/components/Header.vue';
 
 export default {
+
   name: 'App',
   components: {
-    Home,
     Header,
   }
+
 }
 </script>
 
@@ -24,4 +23,5 @@ export default {
 
 #app
   color black
+  
 </style>

@@ -2,22 +2,30 @@
     <section>
         <div class="container-project">
             <div class="projets gauche">
-                <div class="projet women">
-                </div>
+                <router-link to="/projet/womenplease">
+                    <div class="projet women">
+                    </div>
+                </router-link>
             </div>
             <div class="projets droite">
-                <div class="projet lampe">
-                </div>
+                <router-link to="/projet/lampe">
+                    <div class="projet lampe">
+                    </div>
+                </router-link>
             </div>
         </div>
         <div class="container-project">
             <div class="projets gauche">
-                <div class="projet projet-4">
-                </div>
+                <router-link to="/projet/nomduprojet">
+                    <div class="projet projet-4">
+                    </div>
+                </router-link>
             </div>
             <div class="projets droite">
-                <div class="projet photo">
-                </div>
+                <router-link to="/projet/photo">
+                    <div class="projet photo">
+                    </div>
+                </router-link>
             </div>
         </div>
     </section>
@@ -50,19 +58,19 @@
             height 100%
         .women
             height calc(100vh - 75px)
-            background-image url("../../src/assets/womenplease_00.jpg")
+            background-image url("../../src/assets/womenplease1.jpg")
             &:hover 
                 background-image url("../../src/assets/womenplease.gif")
         .lampe
             height calc(90vh - 75px)
-            background-image url("../../src/assets/lampe_01.jpg")
+            background-image url("../../src/assets/lampe1.jpg")
             &:hover 
                 background-image url("../../src/assets/lampe.gif")
         .photo
             height calc(100vh - 75px)
             width 75%
             margin-top -17vh
-            background-image url("../../src/assets/photo_01.jpg")
+            background-image url("../../src/assets/photo1.jpg")
             &:hover 
                 background-image url("../../src/assets/photo.gif")
         .projet-4
@@ -70,12 +78,8 @@
             width 75%
             margin-left 25%
             margin-top -7vh
-            background-image url("../../src/assets/womenplease_06.jpg")
+            background-image url("../../src/assets/paulin.jpg")
             &:hover 
-                background-image url("../../src/assets/womenplease.gif")
-        
-
-
-
+                background-image url("../../src/assets/photo.gif")
 
 </style>
