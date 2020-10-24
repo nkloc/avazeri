@@ -23,5 +23,6 @@ export default {
 
 #app
   color black
+  font-family MaisonNeue
   
 </style>
