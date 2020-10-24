@@ -1,5 +1,6 @@
 <template>
     <section>
+
         <div class="container-project">
             <div class="projets gauche">
                 <router-link to="/projet/womenplease">
@@ -14,6 +15,7 @@
                 </router-link>
             </div>
         </div>
+
         <div class="container-project">
             <div class="projets gauche">
                 <router-link to="/projet/nomduprojet">
@@ -28,6 +30,22 @@
                 </router-link>
             </div>
         </div>
+
+        <div class="container-project">
+            <div class="projets gauche">
+                <router-link to="/projet/nomduprojet">
+                    <div class="projet projet-6">
+                    </div>
+                </router-link>
+            </div>
+            <div class="projets droite">
+                <router-link to="/projet/photo">
+                    <div class="projet projet-5">
+                    </div>
+                </router-link>
+            </div>
+        </div>
+
     </section>
 
 </template>
@@ -79,6 +97,19 @@
             margin-left 25%
             margin-top -7vh
             background-image url("../../src/assets/paulin.jpg")
+            &:hover 
+                background-image url("../../src/assets/photo.gif")
+        .projet-5
+            height calc(100vh - 75px)
+            width 75%
+            margin-left 25%
+            background-image url("../../src/assets/paulin.jpg")
+            &:hover 
+                background-image url("../../src/assets/photo.gif")
+        .projet-6
+            height calc(100vh - 75px)
+            width 100%
+            background-image url("../../src/assets/photo1.jpg")
             &:hover 
                 background-image url("../../src/assets/photo.gif")
 

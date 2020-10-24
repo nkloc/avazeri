@@ -55,7 +55,7 @@ header
         position fixed
         text-decoration none 
         h1
-            font-weight 500
+            font-weight 700
     .menu 
         position fixed
         right 30px
@@ -80,8 +80,18 @@ header
     width 100%
     font-family MaisonNeue
     line-height 45px
+    animation descendre 0.8s ease
     top 75px
     left 0
+
+@keyframes descendre {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 75px;
+  }
+}
 .contact
     position fixed
     box-sizing border-box
